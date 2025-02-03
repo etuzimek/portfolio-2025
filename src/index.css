@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #1f1f1f;
+  --primaryOne: #bdbdbd;
+  --secondary: #fbb13c;
+  --secondaryOne: #242423;
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--primary)] text-[var(--primaryOne)] font-[Poppins]
+  }
+  .desktop-links {
+    @apply px-2 cursor-pointer
+  }
+  .pages {
+    @apply max-w-[1200px] mx-auto pt-24 px-2 lg:px-0
+  }
+  .btn {
+    @apply bg-[var(--secondary)] px-2 py-2 text-[var(--primary)] rounded
+  }
+  .social-links {
+    @apply p-3 mx-3 rounded-full border hover:text-[var(--primary)] hover:bg-[var(--primaryOne)]
+  }
+}
